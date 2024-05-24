@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "laptop",
+      "price": 10,
+      "imgSrc": "https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100",
+      "description": "Brand- Apple"
+    },
+    {
+      "id": 2,
+      "name": "headphone",
+      "price": 20,
+      "imgSrc": "https://rukminim2.flixcart.com/image/400/400/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=70",
+      "description": "One- Plus"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": 30,
+      "imgSrc": "https://example.com/product3.jpg",
+      "description": "Description of Product 3"
+    }
+  ]
+}

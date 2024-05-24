@@ -1,0 +1,55 @@
+ 
+{
+    "categories": [
+      {
+        "name": "Electronics",
+        "subcategories": [
+          {
+            "name": "Mobiles",
+            "subsubcategories": [
+              {
+                "name": "Smartphones"
+              },
+              {
+                "name": "Feature Phones"
+              }
+            ]
+          },
+          {
+            "name": "Laptops"
+          },
+          {
+            "name": "Tablets",
+            "subsubcategories": [
+              {
+                "name": "Android Tablets"
+              },
+              {
+                "name": "iPad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fashion",
+        "subcategories": [
+          {
+            "name": "Men",
+            "subsubcategories": [
+              {
+                "name": "Clothing"
+              },
+              {
+                "name": "Shoes"
+              }
+            ]
+          },
+          {
+            "name": "Women"
+          }
+        ]
+      }
+    ]
+  }
+  

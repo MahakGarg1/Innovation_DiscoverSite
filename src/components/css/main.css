@@ -1,0 +1,139 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-bar .brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.cart {
+    position: relative;
+}
+
+.nav-bar-wrapper {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+}
+
+.items {
+    margin-right: 20px;
+}
+
+.items .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-category {
+    width: 100%; /* Change width to 100% for full width on mobile */
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 15px;
+}
+
+.category .category-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.subcategory {
+    margin-left: 15px;
+}
+
+.subcategory .subcategory-link {
+    text-decoration: none;
+    color: #666;
+    display: block;
+}
+
+.main-logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-suggested {
+    width: 100%;
+    padding: 1px 40px 40px; /* Top and sides have padding, bottom has no padding */
+    margin: 0 auto; /* Center horizontally */
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center products on mobile */
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.filter-page {
+    padding: 20px;
+}
+
+
+/* Mobile device support */
+@media only screen and (max-width: 768px) {
+    .main-category {
+        display: none; /* Hide main category on mobile */
+    }
+
+    .nav-bar-wrapper {
+        flex-direction: column; /* Change navigation items to column layout on mobile */
+        align-items: stretch; /* Stretch navigation items to full width on mobile */
+    }
+
+    .nav-bar {
+        justify-content: flex-start; /* Align navigation items to start on mobile */
+        padding: 10px; /* Adjust padding on mobile */
+    }
+
+    .items {
+        margin: 10px 0; /* Adjust margin on mobile */
+    }
+}
