@@ -4,7 +4,7 @@
       "id": 1,
       "name": "laptop",
       "price": 10,
-      "imgSrc": "https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100",
+      "imgSrc": "https://rukminim2.flixcart.com/flap/400/400/image/69c6589653afdb9a.png?q=100",
       "description": "Brand- Apple"
     },
     {
@@ -20,6 +20,50 @@
       "price": 30,
       "imgSrc": "https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/y/x/b/-original-imagxp9ncr6y7hfd.jpeg?q=70&crop=false",
       "description": "fire bolt"
+    },
+    {
+      "id": 4,
+      "name": "The verge",
+      "price": 25,
+      "imgSrc": "https://cdn.vox-cdn.com/thumbor/ydpDueGnP1NlVJEpbGCYbTg6bjA=/0x0:2700x1800/768x768/filters:focal(1350x900:1351x901)/cdn.vox-cdn.com/uploads/chorus_asset/file/25229534/246963_Samsung_Galaxy_S24_JPorter_0003.jpg",
+      "description": "phone"
+    },
+    {
+      "id": 5,
+      "name": "Wireless Mouse",
+      "price": 15,
+      "imgSrc": "https://rukminim2.flixcart.com/image/416/416/keyboard-mouse-combo/h/z/3/hp-g1000-original-imaezvwgvhfgmynf.jpeg?q=70",
+      "description": "Brand: HP"
+    },
+    {
+      "id": 6,
+      "name": "Gaming Console",
+      "price": 50,
+      "imgSrc": "https://cdn.thewirecutter.com/wp-content/media/2023/11/gamingconsoles-2048px-00633.jpg?auto=webp&quality=75&width=1024",
+      "description": "PS 5"
+    },
+    {
+      "id": 7,
+      "name": "Camera",
+      "price": 40,
+      "imgSrc": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canon-europe.com%2Fcameras%2Feos-r7%2F&psig=AOvVaw1Y3LzdLvBhgWeZMpN_kOkf&ust=1716742299605000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjM7sqhqYYDFQAAAAAdAAAAABAI",
+      "description": "Brand: Sony"
+    },
+    {
+      "id": 6,
+      "name": "Gaming1 Console",
+      "price": 50,
+      "imgSrc": "https://rukminim2.flixcart.com/image/416/416/psu5ifk0/gamingconsole/g/s/6/1-silka-tpfcy0001-telstar-original-imaemhzc4cdzqewz.jpeg?q=70",
+      "description": "Brand: Silka"
+    },
+    {
+      "id": 7,
+      "name": "Camera1",
+      "price": 40,
+      "imgSrc": "https://rukminim2.flixcart.com/image/416/416/k0flmkw0/camera/7/z/q/sony-dsc-w830-original-imafkymywvcns6be.jpeg?q=70",
+      "description": "Brand: Sony"
     }
+
+    
   ]
 }
