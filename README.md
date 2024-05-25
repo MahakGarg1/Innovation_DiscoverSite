@@ -8,6 +8,29 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-1. ```Clone the repository: ```
-   
+1. ## Clone the repository:
+
+```
+https://github.com/MahakGarg1/Innovation_DiscoverSite.git
+```
+
+2. ## Navigate to the project directory:
+
+```
+cd discover-dollar-shopping
+```
+
+3. ## Install dependencies:
+
+```
+npm install
+```
+
+4.  ## Start the development server:
+
+```
+npm run dev
+
+```
+![alt text](disdollar.drawio.png)
    
