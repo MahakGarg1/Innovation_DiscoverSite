@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import './css/main.css';
+import products from './data/products.json';
 
 const Navbar = ({ setData, cart }) => {
     const navigate = useNavigate();
     const [searchTerm, setSearchTerm] = useState('');
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [showToggleButton, setShowToggleButton] = useState(true);
+    const [searchResults, setSearchResults] = useState([]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,7 +25,10 @@ const Navbar = ({ setData, cart }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate(`/search/${searchTerm}`);
+        const results = products.items.filter(item =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setSearchResults(results);
         setSearchTerm('');
     };
 
@@ -49,6 +54,29 @@ const Navbar = ({ setData, cart }) => {
                     </button>
                 )}
             </div>
+            {/* Display search results */}
+            {searchResults.length > 0 ? (
+    <div>
+        <h2>Search Results</h2>
+        <ul>
+            {searchResults.map(item => (
+                <li key={item.id}>
+                    <Link to={`/product/${item.id}`}>
+                        <img src={item.imgSrc} alt={item.name} />
+                        <div>
+                            <h3>{item.name}</h3>
+                            <p>Price: ${item.price}</p>
+                            <p>Description: {item.description}</p>
+                        </div>
+                    </Link>
+                </li>
+            ))}
+        </ul>
+    </div>
+) : (
+    <p>No products found</p>
+)}
+
         </header>
     );
 };
