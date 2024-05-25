@@ -1,55 +1,86 @@
- 
 {
-    "categories": [
-      {
-        "name": "Electronics",
-        "subcategories": [
-          {
-            "name": "Mobiles",
-            "subsubcategories": [
-              {
-                "name": "Smartphones"
-              },
-              {
-                "name": "Feature Phones"
-              }
-            ]
-          },
-          {
-            "name": "Laptops"
-          },
-          {
-            "name": "Tablets",
-            "subsubcategories": [
-              {
-                "name": "Android Tablets"
-              },
-              {
-                "name": "iPad"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Fashion",
-        "subcategories": [
-          {
-            "name": "Men",
-            "subsubcategories": [
-              {
-                "name": "Clothing"
-              },
-              {
-                "name": "Shoes"
-              }
-            ]
-          },
-          {
-            "name": "Women"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "categories": [
+    {
+      "name": "Electronics",
+      "image": "https://rukminim2.flixcart.com/image/200/200/xif0q/monitor/g/p/4/-original-imagxwyy9zspdybv.jpeg?q=70",
+      "subcategories": [
+        {
+          "name": "Mobiles",
+          "subsubcategories": [
+            {
+              "name": "Smartphones"
+            },
+            {
+              "name": "Feature Phones"
+            },
+            {
+              "name": "Accessories"
+            }
+          ]
+        },
+        {
+          "name": "Laptops",
+          "subsubcategories": [
+            {
+              "name": "Gaming Laptops"
+            },
+            {
+              "name": "Ultrabooks"
+            },
+            {
+              "name": "Chromebooks"
+            }
+          ]
+        },
+        {
+          "name": "Tablets",
+          "subsubcategories": [
+            {
+              "name": "Android Tablets"
+            },
+            {
+              "name": "iPad"
+            },
+            {
+              "name": "Windows Tablets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fashion",
+      "image": "https://www.discoverdollar.com/hubfs/image%203.svg",
+      "subcategories": [
+        {
+          "name": "Men",
+          "subsubcategories": [
+            {
+              "name": "Clothing"
+            },
+            {
+              "name": "Shoes"
+            },
+            {
+              "name": "Accessories"
+            }
+          ]
+        },
+        {
+          "name": "Women",
+          "subsubcategories": [
+            {
+              "name": "Dresses"
+            },
+            {
+              "name": "Tops"
+            },
+            {
+              "name": "Bottoms"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
