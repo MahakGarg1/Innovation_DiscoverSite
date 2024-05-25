@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { items } from './data/products';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import './css/main.css';
 
 const Navbar = ({ setData, cart }) => {
     const navigate = useNavigate();
     const [searchTerm, setSearchTerm] = useState('');
-    const [priceRange, setPriceRange] = useState([0, 200000]); // Default price range
-    const [priceFilterOpen, setPriceFilterOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [showToggleButton, setShowToggleButton] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setShowToggleButton(scrollPosition === 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -16,10 +27,14 @@ const Navbar = ({ setData, cart }) => {
         setSearchTerm('');
     };
 
+    const toggleTheme = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+
     return (
         <header className="sticky-top">
             <div className="nav-bar">
-                <Link to="/" className="brand">E-Cart</Link>
+                <Link to="/" className="brand1">Discover-Dollar</Link>
                 <form onSubmit={handleSubmit} className="search-bar">
                     <input
                         value={searchTerm}
@@ -28,15 +43,11 @@ const Navbar = ({ setData, cart }) => {
                         placeholder="Search Products"
                     />
                 </form>
-                <Link to="/cart" className="cart">
-                    <button type="button" className="btn btn-primary position-relative">
-                        <BsFillCartCheckFill style={{ fontSize: '1.5rem' }} />
-                        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            {cart.length}
-                            <span className="visually-hidden">unread messages</span>
-                        </span>
+                {showToggleButton && (
+                    <button className="theme-toggle-button" onClick={toggleTheme}>
+                        {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
                     </button>
-                </Link>
+                )}
             </div>
         </header>
     );
